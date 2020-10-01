@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title></title>
+  </head>
+  <body>
+    <!-- Header Start  -->
+    <header>
+      <nav id="navigator_my" class="navbar navbar-expand-md navbar-dark my_nav_color">
+        <!-- Navbar left-side -->
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand mr-3">7BnB</a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar right-side -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+              <a href="#" class="nav-item nav-link">Home</a>
+              <a href="#" class="nav-item nav-link">Register</a>
+              <a href="#" class="nav-item nav-link">Login</a>
+              <a href="#" class="nav-item nav-link d-none d-block d-sm-block d-md-none">
+                <input class="form-control mr-sm-2" type="text" placeholder="Dove andiamo?" aria-label="Dove andiamo?">
+                <button class="btn btn-warning" type="submit">Go!</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- STICKY Return button -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    </header>
+    <!-- Header End -->
+    <main>
+      <!-- JUMBO-->
+      <div class="container-fluid my_remove ">
+        <div class="row">
+          <div class="col-md-12 ">
+            <div class="carousel slide relative " data-ride="carousel">
+              <div class="carousel-inner">
+                <!-- IMG 1 -->
+                <div class="carousel-item active ms_container_text" data-interval="10000">
+                  <img class="img-fluid" src="img/mare.png" alt="">
+
+                </div>
+                <!-- IMG 2 -->
+                <div class="carousel-item ms_container_text" data-interval="2000">
+                  <img class="img-fluid" src="img/montagna.png" alt="">
+                </div>
+                <!-- IMG 3 -->
+                <div class="carousel-item ms_container_text">
+                  <img class="img-fluid" src="img/spazio.jpg" alt="">
+                </div>
+              </div>
+                <!-- Carousel control hidden -->
+                <a class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" role="button" data-slide="next">
+                <span class="sr-only">Next</span>
+                </a>
+                <!-- End Carousel control hidden -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END JUMBO-->
+      <!-- form section-->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <h2 class="ms_text_center">Accedi a funzionalità esclusive con un account gratuito. Scopri le destinazioni più belle di italia.</h2>
+              <form class="ms_form">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="firstname">Nome</label>
+                    <input type="text" class="form-control" id="Name"  placeholder="Nome">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Cognome</label>
+                    <input type="text" class="form-control" id="Surname" placeholder="Cognome">
+                  </div>
+                  <div class="form-group">
+                    <label for="dateofbirth">Data di nascita</label>
+                    <input type="date" class="form-control" id="DateofBirth" >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="InputPassword">Password</label>
+                  <input type="password" class="form-control" id="Password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <label for="InputPasswordConfirm">Password di Conferma</label>
+                  <input type="passwordConfirm" class="form-control" id="passwordConfirm" placeholder="Password di Conferma">
+                </div>
+                <button type="submit" class="btn btn-success">Registrati</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      <!-- end section -->
+    </main>
+
+    <!-- Footer Start -->
+    <footer class=" pt-4 my_footer_color edit_footer">
+      <div class="container">
+        <!-- SOCIAL NETWORK -->
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1">
+              <i class="fab fa-twitter"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-gplus mx-1">
+              <i class="fab fa-google-plus-g"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-li mx-1">
+              <i class="fab fa-linkedin-in"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-dribbble mx-1">
+              <i class="fab fa-dribbble"> </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href=""> Team S3v3n</a>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>
